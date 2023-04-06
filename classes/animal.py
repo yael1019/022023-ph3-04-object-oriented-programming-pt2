@@ -1,8 +1,10 @@
 class Animal:
 
     def __init__(self, name, recent_food):
+        print('We are in Animal')
         self.name = name
         self.recent_food = recent_food
+        print('We are leaving Animal')
 
     def eat(self, food):
         print(f'{self.name} is eating {food}')

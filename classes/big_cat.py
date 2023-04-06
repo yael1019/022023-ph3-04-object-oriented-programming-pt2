@@ -7,8 +7,10 @@ from classes.animal import Animal
 # this will make Animal a superclass and BigCat a subclass
 # this is inheritance 
 class BigCat(Animal):
-    # def __init__(self, name):
-    #     self.name = name
+    def __init__(self, name, recent_food):
+        print('We are in BigCat')
+        super().__init__(name, recent_food)
+        print('We are leaving BigCat')
 
     def __repr__(self):
         return f"<BigCat name={self.name} >"
